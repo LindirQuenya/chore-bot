@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ### bots ###
-print(os.environ.get('MODE'))
+#print(os.environ.get('MODE'))
 if os.environ.get('MODE') == 'PRODUCTION':
     chores_bot = os.environ.get('BOROMIR')
     reminders_bot = os.environ.get('BOROMIR')
