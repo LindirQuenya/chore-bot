@@ -5,20 +5,18 @@ load_dotenv()
 ### bots ###
 print(os.environ.get('MODE'))
 if os.environ.get('MODE') == 'PRODUCTION':
-    test_bot = os.environ.get('BOT_TEST')
-    chores_bot = os.environ.get('STUB_CHORES')
-    reminders_bot = os.environ.get('STUB_HUB')
+    chores_bot = os.environ.get('BOROMIR')
+    reminders_bot = os.environ.get('BOROMIR')
 else:
-    test_bot = os.environ.get('BOT_TEST')
     reminders_bot = os.environ.get('BOT_TEST')
     chores_bot = os.environ.get('BOT_TEST')
 
 ### files ###
 if os.environ.get('SERVER') == 'PRODUCTION':
-    fileLocation = "/home/ubuntu/chore-bot/chores.csv"
+    fileLocation = "/home/jeb/boromir/chores2324.csv"
 else:
     fileLocation = 'chores.csv'
 
 ### people in csv ###
-names = {"Coleman", "Hudson", "Noah",
-            "Peter", "Michael", "Wesley", "Luke"}
+names = {"Tim", "John", "Hank",
+            "Selby", "Luke", "Jase", "William"}

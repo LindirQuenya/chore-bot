@@ -5,10 +5,6 @@ from datetime import date
 
 from defines import *
 
-print(test_bot)
-print(chores_bot)
-print(reminders_bot)
-
 def log(msg):
     print(f"{str(datetime.datetime.now())}: {msg}")
 
@@ -33,10 +29,6 @@ def getRandomBibleVerse():
     return content
 
 log("Starting run")
-
-# Send alive message every time it runs
-sendGroupMeMessage("Program ran", test_bot)
-log("Sent test message")
 
 # Remind on Saturday
 if datetime.datetime.today().weekday() == 5:  # 5
