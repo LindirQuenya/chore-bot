@@ -13,7 +13,7 @@ else:
 
 ### files ###
 if os.environ.get('SERVER') == 'PRODUCTION':
-    fileLocation = "/home/jeb/boromir/chores2324.csv"
+    fileLocation = "/home/jeb/boromir/chores_s24.csv"
 else:
     fileLocation = 'chores.csv'
 
